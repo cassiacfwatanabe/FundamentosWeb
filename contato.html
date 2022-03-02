@@ -8,19 +8,75 @@
 </head>
 <body>
       
-    <ul>
-        <li>
-           <a href="index.html">Home</a>
-        </li>
-         <li>
-           <a href="receitafocaccia.html">Receita de Focaccia</a>
-         <li>
-          <a href="contato.html">Contato</a>
-         </li>
-            
-         </ul>
+ 
+  <ul id="menu">
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="receitafocaccia.html">Receita Focaccia</a>
+  </li>
+    <li>
+        <a href="contato.html">Contato</a>
+    </li>
+</ul>
 
-         <h1>Entre em contato</h1>
-         <p>Tel:(XX)XXXXX-XXXX</p>
+
+<h1 class="center">Entre em contato comigo</h1>
+
+    <div class="container mb-50 ">
+        <div>
+            <form class="fm">
+                <label class="wcd" for="nome">Nome:</label> 
+                <input class="brwp" type="text" id="nome" onkeyup="validaNome()"  placeholder="Informe o seu Nome" >
+                <div id="txtNome"></div>
+                <br>
+                <label class="wcd" for="email">E-mail:</label>
+                <input class="brwp" type="email" id="email" onkeyup="validaEmail()" placeholder="Informe o seu Email" >
+                <div id="txtEmail"></div>
+                <br>
+                <label class="wcd" for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" cols="41" rows="7" onkeyup="validaAssunto()"" placeholder="Informe um comentario"></textarea>
+                <div id="txtAssunto"></div>
+                <button class="btn" onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+
+        <div class="ml-50">
+            <h2>Endereço:</h2>
+            <p>R. Ernesto Capelari, 36</p>
+            <p>São Paulo - SP</p>
+        
+            <iframe src="https://www.google.com/maps?q=rua+ernesto+capelari&um=1&ie=UTF-8&sa=X&ved=2ahUKEwixvNLIyKj2AhUFqpUCHeYjBVkQ_AUoAXoECAEQAw" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+        </div>
+
+    </div>
+    
+    <hr>
+
+    <footer class="teste">
+        <div class="container">
+            <a href="https://www.facebook.com/carolina.watanabe.334" target="_blank">
+                <img class="tm-social p-30" src="assets/img/facebook.png" alt="Logo do Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/cassiacarolinawata/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/instagram.png" alt="Logo do Instagram">
+            </a>
+
+            <a href="https://www.linkedin.com/in/c%C3%A1ssia-carolina-fonseca-watanabe-919754213/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+
+            <a href="https://github.com/Nyckk1" target="_blank">
+                <img class="tm-social p-30" src="assets/img/github.png" alt="Logo do GitHub">
+            </a>
+        </div>
+        <p class="center teste">
+            Todos os direitos reservados: Cassia Watanabe &copy;
+        </p>
+    </footer>
+  
+<script src="assets/js/script.js"></script>
 </body>
 </html>
